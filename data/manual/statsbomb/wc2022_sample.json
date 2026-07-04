@@ -1,0 +1,16 @@
+[
+  {
+    "match_id": "wc2022-final",
+    "home_team": "Argentina",
+    "away_team": "France",
+    "home_xg": 2.2,
+    "away_xg": 1.8,
+    "home_goals": 3,
+    "away_goals": 3,
+    "stage": "Final",
+    "date": "2022-12-18",
+    "went_to_penalties": true,
+    "home_pen_score": 4,
+    "away_pen_score": 2
+  }
+]

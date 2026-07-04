@@ -1,0 +1,108 @@
+framework:
+
+  name: world_cup_predictor
+
+  league: fifa.world
+
+
+
+espn:
+
+  base_site: https://site.api.espn.com/apis/site/v2/sports/soccer
+
+  base_site_v2: https://site.api.espn.com/apis/v2/sports/soccer
+
+  base_core: https://sports.core.api.espn.com/v2/sports/soccer/leagues
+
+  cache_ttl_live_sec: 300
+
+  cache_ttl_static_sec: 86400
+
+
+
+google_browser:
+
+  headless: true
+
+  timeout_ms: 15000
+
+  cache_ttl_sec: 600
+
+  queries:
+
+    standings: "FIFA World Cup standings"
+
+    results: "FIFA World Cup results today"
+
+    match_template: "{home} vs {away}"
+
+
+
+signals:
+
+  weights:
+
+    fatigue_accumulation_index: 0.08
+
+    tactical_matchup_score: 0.10
+
+    set_piece_differential: 0.07
+
+    pressure_resilience_index: 0.08
+
+    momentum_velocity: 0.07
+
+    narrative_pressure: 0.05
+
+    penalty_shootout_prob: 0.06
+
+    referee_team_compatibility: 0.05
+
+    game_state_elasticity: 0.07
+
+    sharp_money_divergence: 0.06
+
+    prediction_confidence_spread: 0.06
+
+    goalkeeper_form_index: 0.06
+
+    star_dependency_ratio: 0.05
+
+    bench_impact_index: 0.06
+
+    days_rest_effect: 0.05
+
+    depth_risk_factor: 0.03
+
+
+
+sai:
+
+  min_agreement_threshold: 0.65
+
+  divergence_penalty: 0.15
+
+
+
+monte_carlo:
+
+  simulations: 10000
+
+
+
+bayesian:
+
+  default_prior: 0.50
+
+  min_confidence: 0.05
+
+  max_confidence: 0.95
+
+
+
+telemetry:
+
+  heat_threshold_celsius: 28.0
+
+  narrow_pitch_width_m: 66.0
+
